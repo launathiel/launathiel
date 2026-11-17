@@ -23,7 +23,8 @@ jobs:
 
       - name: Generate stats and top languages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional PAT (read:user, repo) so private contributions count; falls back to the workflow token.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python3 scripts/stats.py "${{ github.repository_owner }}" dist PythonG8-2020
 
       - name: Generate snake SVGs
