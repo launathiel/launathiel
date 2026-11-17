@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" role="img" aria-label="Delivery pipeline: code, build, test, secure, deploy, observe">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#112a3a"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="1" stop-color="#7ee787"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .label { font: 600 14px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #c9d1d9; text-anchor: middle; }
+      .icon  { font: 700 18px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #e6edf3; text-anchor: middle; dominant-baseline: central; }
+      .title { font: 700 15px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #8b949e; }
+      .ok    { font: 700 15px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #7ee787; text-anchor: end; }
+      .node  { fill: #161b22; stroke: #30363d; stroke-width: 2; }
+      .ring  { fill: none; stroke: #36bcf7; stroke-width: 3; opacity: 0;
+               transform-box: fill-box; transform-origin: center;
+               animation: pulse 6s ease-out infinite; }
+      @keyframes pulse {
+        0%   { opacity: 0;   transform: scale(1); }
+        3%   { opacity: 1;   transform: scale(1); }
+        16%  { opacity: 0;   transform: scale(1.45); }
+        100% { opacity: 0;   transform: scale(1.45); }
+      }
+      .dash { stroke-dasharray: 6 10; animation: flow 1.2s linear infinite; }
+      @keyframes flow { to { stroke-dashoffset: -16; } }
+      .blink { animation: blink 1.2s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+    </style>
+  </defs>
+
+  <rect width="960" height="230" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="959" height="229" rx="14" fill="none" stroke="#30363d"/>
+
+  <text class="title" x="28" y="36">$ git push origin main<tspan class="blink" fill="#36bcf7"> _</tspan></text>
+  <text class="ok" x="932" y="36">● pipeline: healthy</text>
+
+  <!-- rail -->
+  <line x1="90" y1="120" x2="870" y2="120" stroke="#21262d" stroke-width="6" stroke-linecap="round"/>
+  <line class="dash" x1="90" y1="120" x2="870" y2="120" stroke="url(#rail)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- packets -->
+  <g filter="url(#glow)">
+    <circle r="6" fill="#36bcf7"><animateMotion dur="6s" repeatCount="indefinite" path="M90,120 H870"/></circle>
+    <circle r="6" fill="#58d1c9"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M90,120 H870"/></circle>
+    <circle r="6" fill="#7ee787"><animateMotion dur="6s" begin="4s" repeatCount="indefinite" path="M90,120 H870"/></circle>
+  </g>
+
+  <!-- nodes -->
+  <g>
+    <circle class="ring" cx="90"  cy="120" r="34" style="animation-delay:0s"/>
+    <circle class="node" cx="90"  cy="120" r="34"/>
+    <text class="icon"  x="90"  y="120">&lt;/&gt;</text>
+    <text class="label" x="90"  y="182">CODE</text>
+
+    <circle class="ring" cx="246" cy="120" r="34" style="animation-delay:1s"/>
+    <circle class="node" cx="246" cy="120" r="34"/>
+    <text class="icon"  x="246" y="120">[#]</text>
+    <text class="label" x="246" y="182">BUILD</text>
+
+    <circle class="ring" cx="402" cy="120" r="34" style="animation-delay:2s"/>
+    <circle class="node" cx="402" cy="120" r="34"/>
+    <text class="icon"  x="402" y="120">✓✓</text>
+    <text class="label" x="402" y="182">TEST</text>
+
+    <circle class="ring" cx="558" cy="120" r="34" style="animation-delay:3s"/>
+    <circle class="node" cx="558" cy="120" r="34"/>
+    <text class="icon"  x="558" y="120">🔒</text>
+    <text class="label" x="558" y="182">SECURE</text>
+
+    <circle class="ring" cx="714" cy="120" r="34" style="animation-delay:4s"/>
+    <circle class="node" cx="714" cy="120" r="34"/>
+    <text class="icon"  x="714" y="120">⎈</text>
+    <text class="label" x="714" y="182">DEPLOY</text>
+
+    <circle class="ring" cx="870" cy="120" r="34" style="animation-delay:5s"/>
+    <circle class="node" cx="870" cy="120" r="34"/>
+    <text class="icon"  x="870" y="120">◉</text>
+    <text class="label" x="870" y="182">OBSERVE</text>
+  </g>
+
+  <text x="480" y="214" style="font: 12px 'JetBrains Mono', Consolas, monospace; fill:#6e7681; text-anchor:middle">automated · secure by default · observable · repeatable</text>
+</svg>

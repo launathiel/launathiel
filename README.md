@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Laurentius%20Nathaniel&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Infrastructure%20Engineer&descSize=20&descAlignY=58&animation=fadeIn" alt="Laurentius Nathaniel" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&animation=twinkling&text=Laurentius%20Nathaniel&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Infrastructure%20Engineer&descSize=20&descAlignY=58" alt="Laurentius Nathaniel" />
 </p>
 
 <p align="center">
@@ -21,20 +21,17 @@
 
 ## `$ whoami`
 
-```yaml
-name: Laurentius Nathaniel   # call me Nathan
-role: Full Stack Infrastructure Engineer
-domains: [DevOps, Site Reliability, Cloud, Security, Platform Engineering]
-in_production_since: 2022
-based_in: Indonesia 🇮🇩
-mission: >
-  Build platforms that let developers ship fast without breaking things:
-  automated, observable, secure, and boring to operate.
-currently:
-  - designing self-service internal developer platforms
-  - hardening Kubernetes and the software supply chain
-  - turning toil into pipelines and runbooks into code
-```
+<p align="center">
+  <img src="./assets/terminal.svg" alt="whoami: Full Stack Infrastructure Engineer since 2022. Mission: scalable, reliable infrastructure with a developer experience focus to speed up software delivery." width="100%" />
+</p>
+
+> 🎯 **Mission:** build scalable, reliable infrastructure with a strong focus on developer experience, so teams can ship software faster and with confidence.
+
+## ⚡ From Commit to Production
+
+<p align="center">
+  <img src="./assets/pipeline.svg" alt="Animated delivery pipeline: code, build, test, secure, deploy, observe" width="100%" />
+</p>
 
 ## 🧭 What I Do Across the Stack
 
@@ -124,17 +121,6 @@ currently:
   <img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=influxdb&logoColor=white" alt="InfluxDB" height="48" />
 </p>
 
-## 🚀 Featured Projects
-
-| Project | What it is |
-|---|---|
-| ⚡ [**rakit**](https://github.com/launathiel/rakit) | Universal CI/CD CLI tool |
-| 🧪 [**DevOpsFullLabs**](https://github.com/launathiel/DevOpsFullLabs) | End-to-end DevOps labs: sample apps, IaC, config management, manifests, and CI/CD |
-| 🛒 [**microservice-online-shopping**](https://github.com/launathiel/microservice-online-shopping) | Event-driven microservices, ready to deploy on Kubernetes |
-| 🕸️ [**istio-feature-explore**](https://github.com/launathiel/istio-feature-explore) | Hands-on exploration of Istio service mesh features |
-| 🐳 [**ntn-docker**](https://github.com/launathiel/ntn-docker) | Field notes on containerizing useful applications |
-| 📊 [**k8s-elk-stack**](https://github.com/launathiel/k8s-elk-stack) | ELK stack deployment on Kubernetes |
-
 ## 🗺️ Journey
 
 ```text
@@ -163,6 +149,14 @@ currently:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=launathiel&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph" width="100%" />
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/launathiel/launathiel/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/launathiel/launathiel/output/github-snake.svg" />
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/launathiel/launathiel/output/github-snake-dark.svg" width="100%" />
+  </picture>
+</p>
+
 ## 🧠 Engineering Principles
 
 > **Automate the toil.** If I do it twice, it becomes a pipeline.
@@ -171,8 +165,10 @@ currently:
 >
 > **Secure by default.** Guardrails beat gatekeepers.
 >
+> **Developers are my customers.** Paved roads beat tickets.
+>
 > **Everything as code.** Infra, policy, dashboards, docs.
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" alt="footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer&animation=twinkling" alt="footer" />
 </p>
