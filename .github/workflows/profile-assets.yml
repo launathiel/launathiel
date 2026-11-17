@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile assets
 
 on:
   schedule:
@@ -10,11 +10,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats and top languages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/stats.py "${{ github.repository_owner }}" dist PythonG8-2020
+
       - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:

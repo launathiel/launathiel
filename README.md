@@ -149,8 +149,8 @@
 ## 📊 GitHub Telemetry
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=launathiel&show_icons=true&hide_border=true&theme=tokyonight&bg_color=0b1628&title_color=4f8ef7&icon_color=7ee787&count_private=true&include_all_commits=true" alt="GitHub stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=launathiel&layout=compact&hide_border=true&theme=tokyonight&bg_color=0b1628&title_color=4f8ef7&langs_count=8&exclude_repo=PythonG8-2020" alt="Top languages" height="170" />
+  <img src="https://raw.githubusercontent.com/launathiel/launathiel/output/stats.svg" alt="GitHub stats" height="190" />
+  <img src="https://raw.githubusercontent.com/launathiel/launathiel/output/top-langs.svg" alt="Top languages" height="190" />
 </p>
 
 <p align="center">
@@ -167,20 +167,4 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/launathiel/launathiel/output/github-snake.svg" />
     <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/launathiel/launathiel/output/github-snake-dark.svg" width="100%" />
   </picture>
-</p>
-
-## 🧠 Engineering Principles
-
-> **Automate the toil.** If I do it twice, it becomes a pipeline.
->
-> **Measure before you tune.** SLOs over gut feeling.
->
-> **Secure by default.** Guardrails beat gatekeepers.
->
-> **Developers are my customers.** Paved roads beat tickets.
->
-> **Everything as code.** Infra, policy, dashboards, docs.
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10233f,50:0b1628,100:4f8ef7&height=120&section=footer&animation=twinkling" alt="footer" />
 </p>
