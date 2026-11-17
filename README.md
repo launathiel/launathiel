@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Laurentius Nathaniel: Good engineering makes software work. Great engineering makes it reliable." width="100%" />
+  <a href="https://linkedin.com/in/launathiel/">
+    <img src="./assets/hero.svg" alt="Laurentius Nathaniel, Full Stack Infrastructure Engineer. Good engineering makes software work. Great engineering makes it reliable." width="100%" />
+  </a>
 </p>
 
 <p align="center">
@@ -145,6 +147,56 @@
 <p align="center">
   <img src="./assets/journey.svg" alt="Journey: 2020 research assistant, 2021 Kubernetes workshop speaker, 2022 SRE at tiket.com, 2023 SRE at PINTU, 2026 CKA, now Full Stack Infrastructure Engineer" width="100%" />
 </p>
+
+<details>
+<summary><b>📂 <code>kubectl describe engineer nathan</code></b> (click to expand the experience log)</summary>
+<br>
+
+<details>
+<summary>🟢 <b>Site Reliability Engineer</b> · PINTU (crypto exchange) · <i>Dec 2023 to present</i></summary>
+
+- Operate **100+ microservices** across multiple Kubernetes clusters with regular upgrades and toolchain maintenance
+- Architected custom **CI/CD across the full SDLC**; self-hosted **GitHub Actions runners on Kubernetes** to cut build cost and raise throughput
+- **Terraform + Atlantis** IaC workflows, including safe state changes across production environments
+- Led **zero-downtime migrations** of microservices and **PostgreSQL** across clusters
+- Rolled out a **company-wide mesh VPN** and least-privilege pods via **IRSA / Workload Identity**
+- Replaced legacy monitoring with **VictoriaMetrics** and an org-wide **Grafana** dashboard baseline
+- Migrated **sidecar to Ambient Mesh** and hardened **Gateway API** for ingress
+- Layered **WAF, security groups, network policies**; reduced cloud spend through rightsizing
+- Automated operations with **AI tools and custom AI agents** to speed up debugging and delivery
+
+</details>
+
+<details>
+<summary>🔵 <b>Site Reliability Engineer</b> · tiket.com (travel-tech) · <i>Aug 2022 to Nov 2023</i></summary>
+
+- Ran monitoring, logging, and **centralized alerting** across services
+- Built an end-to-end **CDN logging system** with a **log ingester in Go** for an event-driven pipeline
+- Managed **Kafka** clusters with dedicated cluster monitoring
+- Designed a **centralized monitoring platform** from scratch across VM and Kubernetes labs
+- Migrated Kubernetes monitoring and tracing to a **SaaS observability platform**
+
+</details>
+
+<details>
+<summary>⚪ <b>Site Reliability Engineer Intern</b> · tiket.com · <i>Mar 2022 to Jul 2022</i></summary>
+
+- CI/CD automation to deploy a full monitoring stack
+- IaC provisioning on cloud plus **Ansible** configuration management
+- **Prometheus + Thanos** monitoring on VMs and Kubernetes, with custom metrics in **Grafana**
+
+</details>
+
+<details>
+<summary>🎓 <b>Certifications & community</b></summary>
+
+- **Certified Kubernetes Administrator (CKA)**, CNCF / Linux Foundation, 2026
+- Architecting on AWS · Networking in Google Cloud · GCP Core Infrastructure
+- Kubernetes workshop speaker, **NetTraining 2.0** (6 topics, 3 days, hands-on labs)
+- Research assistant on **service mesh** and event-driven architectures (2020 to 2023)
+
+</details>
+</details>
 
 ## 📊 GitHub Telemetry
 
