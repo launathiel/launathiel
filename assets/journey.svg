@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" role="img" aria-label="Journey: 2020 research, 2021 Kubernetes workshop speaker, 2022 SRE at tiket.com, 2023 SRE at PINTU, 2026 CKA, now Full Stack Infrastructure Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1628"/>
+      <stop offset="1" stop-color="#10233f"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f8ef7"/>
+      <stop offset="1" stop-color="#7ee787"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; text-anchor: middle; }
+      .yr  { font-size: 15px; font-weight: 700; fill: #4f8ef7; }
+      .now { fill: #7ee787; }
+      .t   { font-size: 12.5px; font-weight: 700; fill: #e6edf3; }
+      .s   { font-size: 11.5px; fill: #8b949e; }
+      .progress { stroke-dasharray: 800; stroke-dashoffset: 800; animation: draw 4.2s ease-in-out 0.3s forwards; }
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      .m { opacity: 0; animation: pop 0.5s ease-out forwards; }
+      @keyframes pop { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+      .halo { fill: none; stroke: #7ee787; stroke-width: 2; transform-box: fill-box; transform-origin: center;
+              animation: halo 2s ease-out 5s infinite; opacity: 0; }
+      @keyframes halo { 0% { opacity: .9; transform: scale(1); } 100% { opacity: 0; transform: scale(2.6); } }
+    </style>
+  </defs>
+
+  <rect width="960" height="250" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="959" height="249" rx="14" fill="none" stroke="#1f3354"/>
+
+  <line x1="80" y1="105" x2="880" y2="105" stroke="#1f3354" stroke-width="4" stroke-linecap="round"/>
+  <line class="progress" x1="80" y1="105" x2="880" y2="105" stroke="url(#rail)" stroke-width="4" stroke-linecap="round"/>
+
+  <g class="m" style="animation-delay:0.3s">
+    <text class="yr" x="80" y="75">2020</text>
+    <circle cx="80" cy="105" r="9" fill="#0b1628" stroke="#4f8ef7" stroke-width="3"/>
+    <text class="t" x="80" y="145">RESEARCH</text>
+    <text class="s" x="80" y="167">Service mesh &amp;</text>
+    <text class="s" x="80" y="184">event-driven R&amp;D</text>
+  </g>
+
+  <g class="m" style="animation-delay:1.1s">
+    <text class="yr" x="240" y="75">2021</text>
+    <circle cx="240" cy="105" r="9" fill="#0b1628" stroke="#4f8ef7" stroke-width="3"/>
+    <text class="t" x="240" y="145">SPEAKER</text>
+    <text class="s" x="240" y="167">Kubernetes workshop</text>
+    <text class="s" x="240" y="184">NetTraining 2.0</text>
+  </g>
+
+  <g class="m" style="animation-delay:1.9s">
+    <text class="yr" x="400" y="75">2022</text>
+    <circle cx="400" cy="105" r="9" fill="#0b1628" stroke="#4f8ef7" stroke-width="3"/>
+    <text class="t" x="400" y="145">SRE · tiket.com</text>
+    <text class="s" x="400" y="167">Monitoring, logging</text>
+    <text class="s" x="400" y="184">Kafka, Go log ingester</text>
+  </g>
+
+  <g class="m" style="animation-delay:2.7s">
+    <text class="yr" x="560" y="75">2023</text>
+    <circle cx="560" cy="105" r="9" fill="#0b1628" stroke="#4f8ef7" stroke-width="3"/>
+    <text class="t" x="560" y="145">SRE · PINTU</text>
+    <text class="s" x="560" y="167">100+ microservices</text>
+    <text class="s" x="560" y="184">multi-cluster K8s</text>
+  </g>
+
+  <g class="m" style="animation-delay:3.5s">
+    <text class="yr" x="720" y="75">2026</text>
+    <circle cx="720" cy="105" r="9" fill="#0b1628" stroke="#4f8ef7" stroke-width="3"/>
+    <text class="t" x="720" y="145">CKA</text>
+    <text class="s" x="720" y="167">Certified Kubernetes</text>
+    <text class="s" x="720" y="184">Administrator</text>
+  </g>
+
+  <g class="m" style="animation-delay:4.3s">
+    <text class="yr now" x="880" y="75">NOW</text>
+    <circle class="halo" cx="880" cy="105" r="9"/>
+    <circle cx="880" cy="105" r="9" fill="#7ee787" filter="url(#glow)"/>
+    <text class="t" x="880" y="145">FULL STACK INFRA</text>
+    <text class="s" x="880" y="167">Platform · DX</text>
+    <text class="s" x="880" y="184">Reliability at scale</text>
+  </g>
+
+  <text x="480" y="228" style="font-size:12px; fill:#5b6b85">professional SRE since 2022 · 4+ years across crypto exchange and travel-tech</text>
+</svg>

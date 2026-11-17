@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" role="img" aria-label="Delivery pipeline: code, build, test, secure, deploy, observe">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#112a3a"/>
+      <stop offset="0" stop-color="#0b1628"/>
+      <stop offset="1" stop-color="#10233f"/>
     </linearGradient>
     <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#36bcf7"/>
+      <stop offset="0" stop-color="#4f8ef7"/>
       <stop offset="1" stop-color="#7ee787"/>
     </linearGradient>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -18,7 +18,7 @@
       .title { font: 700 15px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #8b949e; }
       .ok    { font: 700 15px 'JetBrains Mono', 'Fira Code', Consolas, monospace; fill: #7ee787; text-anchor: end; }
       .node  { fill: #161b22; stroke: #30363d; stroke-width: 2; }
-      .ring  { fill: none; stroke: #36bcf7; stroke-width: 3; opacity: 0;
+      .ring  { fill: none; stroke: #4f8ef7; stroke-width: 3; opacity: 0;
                transform-box: fill-box; transform-origin: center;
                animation: pulse 6s ease-out infinite; }
       @keyframes pulse {
@@ -35,9 +35,9 @@
   </defs>
 
   <rect width="960" height="230" rx="14" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="959" height="229" rx="14" fill="none" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="959" height="229" rx="14" fill="none" stroke="#1f3354"/>
 
-  <text class="title" x="28" y="36">$ git push origin main<tspan class="blink" fill="#36bcf7"> _</tspan></text>
+  <text class="title" x="28" y="36">$ git push origin main<tspan class="blink" fill="#4f8ef7"> _</tspan></text>
   <text class="ok" x="932" y="36">● pipeline: healthy</text>
 
   <!-- rail -->
@@ -46,7 +46,7 @@
 
   <!-- packets -->
   <g filter="url(#glow)">
-    <circle r="6" fill="#36bcf7"><animateMotion dur="6s" repeatCount="indefinite" path="M90,120 H870"/></circle>
+    <circle r="6" fill="#4f8ef7"><animateMotion dur="6s" repeatCount="indefinite" path="M90,120 H870"/></circle>
     <circle r="6" fill="#58d1c9"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M90,120 H870"/></circle>
     <circle r="6" fill="#7ee787"><animateMotion dur="6s" begin="4s" repeatCount="indefinite" path="M90,120 H870"/></circle>
   </g>
